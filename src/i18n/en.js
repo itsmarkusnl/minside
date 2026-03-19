@@ -1,0 +1,277 @@
+const en = {
+  nav: {
+    links: [
+      { label: 'About',      href: '#om-meg' },
+      { label: 'Education',  href: '#utdanning' },
+      { label: 'Experience', href: '#erfaring' },
+      { label: 'Skills',     href: '#ferdigheter' },
+      { label: 'Projects',   href: '#prosjekter' },
+      { label: 'Contact',    href: '#kontakt' },
+    ],
+    darkMode:        'Dark mode',
+    lightMode:       'Light mode',
+    ariaToggleTheme: 'Toggle theme',
+    ariaMenu:        'Menu',
+    cvAriaLabel:     'Download CV',
+    switchLang:      'NO',
+    ariaLang:        'Bytt til norsk',
+  },
+
+  hero: {
+    greeting:    "Hi, I'm",
+    tagline:     'Student & developer — curious, ambitious and always working on something new',
+    btnAbout:    'About me',
+    btnProjects: 'See projects',
+    btnCV:       'Download CV',
+    ariaCV:      'Download CV',
+    ariaGitHub:  'GitHub',
+    ariaLinkedIn:'LinkedIn',
+  },
+
+  about: {
+    label: 'About me',
+    title: 'Who am I?',
+    p1:    "Hi! I'm <b>Markus</b>, a curious master's student with a strong interest in technology, programming and digital solutions that make everyday life easier.",
+    p2:    "I enjoy working on projects that challenge me and allow me to learn new skills. This website is one example — built to show who I am and what I'm passionate about.",
+    p3:    "In my free time I enjoy golf, gaming, working out and spending time with friends. Don't hesitate to reach out if you'd like to chat or collaborate on something exciting!",
+    facts: [
+      { emoji: '📍', label: 'Location',          value: 'Bergen, Norway' },
+      { emoji: '🎓', label: 'Status',             value: "Master's student at UiB" },
+      { emoji: '💻', label: 'Interests',          value: 'Technology & development' },
+      { emoji: '🌱', label: 'Currently learning', value: 'React, Node.js' },
+    ],
+  },
+
+  education: {
+    label:         'Education',
+    title:         'Academic background',
+    statusActive:  'Ongoing',
+    statusDone:    'Completed',
+    subjectsLabel: 'Subject areas',
+    schools: [
+      {
+        school:      'University of Bergen',
+        short:       'UiB',
+        degree:      "Master's in Information Science",
+        period:      '2024 – present',
+        status:      'active',
+        location:    'Bergen',
+        icon:        '🎓',
+        color:       'var(--accent)',
+        description: "The master's programme combines technology, cognitive science and design to understand how people interact with digital systems.",
+        subjects: [
+          { name: 'Artificial Intelligence',      icon: '🤖' },
+          { name: 'Recommender Systems',           icon: '🔍' },
+          { name: 'Human-Computer Interaction',    icon: '🖱️' },
+          { name: 'Machine Learning & Algorithms', icon: '📈' },
+        ],
+        highlight: null,
+      },
+      {
+        school:      'Western Norway University of Applied Sciences',
+        short:       'HVL',
+        degree:      'Bachelor in Computer Engineering',
+        period:      '2021 – 2024',
+        status:      'done',
+        location:    'Bergen',
+        icon:        '🏫',
+        color:       'var(--accent-secondary)',
+        description: 'A broad engineering degree focused on software development, system architecture and modern development methodologies.',
+        subjects: [
+          { name: 'Advanced Web Applications',  icon: '🌐' },
+          { name: '3D Computer Graphics',       icon: '🎮' },
+          { name: 'Software Development',       icon: '⚙️' },
+          { name: 'Development Methodologies',  icon: '🔄' },
+        ],
+        highlight: {
+          label: 'Bachelor thesis',
+          text:  'Developed a mobile application in collaboration with Link Utvikling, built with Flutter and Firebase.',
+          tags:  ['Flutter', 'Firebase', 'Dart'],
+        },
+      },
+    ],
+  },
+
+  experience: {
+    label: 'Experience',
+    title: 'Where have I worked?',
+    jobs: [
+      {
+        company: 'Elkjøp Straume',
+        role:    'Sales Associate & Deputy Safety Representative',
+        period:  '2021 – present',
+        icon:    '🛒',
+        tags:    ['Sales', 'Customer service', 'HSE'],
+        points:  [
+          'Customer advising, upselling and technical support.',
+          'Elected deputy safety representative in 2022, focusing on HSE and work environment.',
+        ],
+      },
+      {
+        company: 'Norwegian Armed Forces',
+        role:    'Guard Soldier & Squad Leader',
+        period:  '2020 – present',
+        icon:    '🪖',
+        tags:    ['Leadership', 'Home Guard'],
+        points:  [
+          'Led guard teams at the Army Combat School, Rena (conscript service 2020–2021).',
+          'Squad leader in the Home Guard since 2024.',
+        ],
+      },
+      {
+        company: 'Masterutvalget InfoMedia',
+        role:    'Finance Manager',
+        period:  '2025 – 2026',
+        icon:    '📊',
+        tags:    ['Finance', 'Organisation'],
+        points:  [
+          'Responsible for financial management within the master student council at InfoMedia, UiB.',
+        ],
+      },
+      {
+        company: 'Root Linjeforening',
+        role:    'IT Manager & Board Member',
+        period:  '2023 – 2024',
+        icon:    '💻',
+        tags:    ['IT operations', 'Web development'],
+        points:  [
+          "Management and development of the association's IT systems and website.",
+          'Co-responsible for developing a new website in collaboration with the PIN-code group.',
+        ],
+      },
+      {
+        company: 'Sotra Taekwondo Club',
+        role:    'Instructor & Deputy Board Member',
+        period:  '2018 – 2020',
+        icon:    '🥋',
+        tags:    ['Instruction', 'Leadership'],
+        points:  [
+          'Planned and conducted training sessions for children in NTN Taekwondo.',
+          'Mentored assistant instructors to ensure quality in training programmes.',
+          'Deputy board member 2023–2025.',
+        ],
+      },
+    ],
+  },
+
+  skills: {
+    label: 'Skills',
+    title: 'What can I do?',
+    levels: {
+      erfaren:   'Proficient',
+      kjent:     'Familiar',
+      utforsker: 'Exploring',
+    },
+    categories: [
+      {
+        title: 'Programming Languages',
+        icon:  '{ }',
+        skills: [
+          { name: 'JavaScript', level: 'erfaren' },
+          { name: 'Python',     level: 'erfaren' },
+          { name: 'Dart',       level: 'erfaren' },
+          { name: 'Java',       level: 'kjent' },
+          { name: 'SQL',        level: 'kjent' },
+          { name: 'MATLAB',     level: 'utforsker' },
+        ],
+      },
+      {
+        title: 'Frontend & Mobile',
+        icon:  '⬡',
+        skills: [
+          { name: 'React',      level: 'erfaren' },
+          { name: 'Flutter',    level: 'erfaren' },
+          { name: 'HTML & CSS', level: 'erfaren' },
+          { name: 'OpenGL',     level: 'utforsker' },
+        ],
+      },
+      {
+        title: 'Backend & Cloud',
+        icon:  '☁',
+        skills: [
+          { name: 'Firebase',           level: 'erfaren' },
+          { name: 'Node.js',            level: 'kjent' },
+          { name: 'Azure',              level: 'kjent' },
+          { name: 'Networking (TCP/IP)', level: 'kjent' },
+        ],
+      },
+      {
+        title: 'Tools & Libraries',
+        icon:  '⚙',
+        skills: [
+          { name: 'Git & GitHub', level: 'erfaren' },
+          { name: 'SciKit-learn', level: 'kjent' },
+          { name: 'VS Code',      level: 'erfaren' },
+        ],
+      },
+    ],
+  },
+
+  projects: {
+    label: 'Projects',
+    title: 'What have I built?',
+    statusLabels: {
+      live:       '🟢 Live',
+      restricted: '🔒 Restricted access',
+      wip:        '🚧 In progress',
+    },
+    items: [
+      {
+        title:     'Personal website',
+        status:    'live',
+        desc:      "You're looking at it! A portfolio built from scratch with React and Vite, focusing on clean design, animations and great user experience.",
+        tags:      ['React', 'Vite', 'CSS Modules', 'Formspree'],
+        link:      'https://github.com/markusnlarsen',
+        linkLabel: 'View code',
+      },
+      {
+        title:     'Bachelor Thesis — Mobile Application',
+        status:    'restricted',
+        desc:      'Developed a mobile application in collaboration with Link Utvikling as part of the bachelor degree at HVL. The project covered the full development lifecycle from requirements specification to final product.',
+        tags:      ['Flutter', 'Firebase', 'Dart', 'Link Utvikling'],
+        link:      null,
+        linkLabel: null,
+      },
+      {
+        title:     "Master's Thesis — Information Science",
+        status:    'wip',
+        desc:      "Ongoing master's thesis at UiB with a focus on Human-Computer Interaction and artificial intelligence. Details will be published once the thesis is complete.",
+        tags:      ['HCI', 'AI', 'Machine Learning', 'UiB'],
+        link:      null,
+        linkLabel: null,
+        eta:       'Expected completion: May 2026',
+      },
+    ],
+  },
+
+  contact: {
+    label:            'Contact',
+    title:            'Get in touch',
+    subtitle:         'Have a question, an idea, or just want to say hi? Send me a message!',
+    nameLabel:        'Name',
+    emailLabel:       'Email',
+    messageLabel:     'Message',
+    namePlaceholder:  'Your name',
+    emailPlaceholder: 'your@email.com',
+    msgPlaceholder:   'Write your message here...',
+    submitBtn:        'Send message',
+    sendingBtn:       'Sending...',
+    waitBtn:          s => `Wait ${s}s`,
+    successMsg:       "Thanks for your message! I'll get back to you as soon as I can.",
+    errorMsg:         'Something went wrong. Please try again or send an email directly.',
+    rateLimitMsg:     s => `Wait ${s} second${s !== 1 ? 's' : ''} before sending again.`,
+    footer:           y => `© ${y} Markus Nipen Larsen — Built with ❤️ and a little help from Claude`,
+    validation: {
+      nameRequired:  'Name is required.',
+      nameTooLong:   'Name cannot exceed 100 characters.',
+      emailRequired: 'Email is required.',
+      emailInvalid:  'Invalid email address.',
+      emailTooLong:  'Email address is too long.',
+      msgRequired:   'Message is required.',
+      msgTooShort:   'Message is too short.',
+      msgTooLong:    n => `Message is too long (${n}/2000 characters).`,
+    },
+  },
+}
+
+export default en

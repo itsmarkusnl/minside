@@ -1,0 +1,223 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 6%;
+  transition: background 0.3s, backdrop-filter 0.3s, box-shadow 0.3s;
+}
+
+.scrolled {
+  background: var(--bg-nav-scrolled);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 var(--border-nav-scrolled);
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+.logoAccent {
+  color: var(--accent);
+}
+
+/* Nav links */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.links a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  position: relative;
+}
+
+.links a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: var(--accent);
+  transition: width 0.25s;
+}
+
+.links a:hover { color: var(--text-primary); }
+.links a:hover::after { width: 100%; }
+
+/* Tema-rad i mobilmeny */
+.themeRow {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.themeRowControls {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.themeLabel {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Høyre side i desktop navbar */
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+/* Språkknapp */
+.langBtn {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.28rem 0.6rem;
+  border: 1.5px solid var(--border-accent);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  background: none;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  cursor: pointer;
+}
+
+.langBtn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* Toggle switch */
+.toggle {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s;
+  flex-shrink: 0;
+  border: 1.5px solid var(--border-accent);
+}
+
+.toggleDark  { background: var(--accent-glow); }
+.toggleLight { background: var(--accent-glow); }
+
+.toggleThumb {
+  position: absolute;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.toggleDark  .toggleThumb { left: 3px; }
+.toggleLight .toggleThumb { left: calc(100% - 19px); }
+
+/* CV-knapp */
+.cvBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border: 1.5px solid var(--accent-secondary-border);
+  color: var(--accent-secondary);
+  border-radius: 7px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  white-space: nowrap;
+}
+
+.cvBtn:hover {
+  border-color: var(--accent-secondary);
+  background: var(--accent-secondary-bg);
+  transform: translateY(-1px);
+}
+
+/* Burger-meny */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  padding: 4px;
+}
+
+.burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-primary);
+  border-radius: 2px;
+  transition: transform 0.25s, opacity 0.25s;
+  transform-origin: center;
+}
+
+/* Animated X */
+.burgerX1 { transform: translateY(7px) rotate(45deg); }
+.burgerX2 { opacity: 0; transform: scaleX(0); }
+.burgerX3 { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobil */
+@media (max-width: 680px) {
+  .burger {
+    display: flex;
+  }
+
+  .navRight {
+    display: none;
+  }
+
+  .themeRow {
+    display: flex;
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    bottom: 0;
+    width: 65%;
+    background: var(--bg-card);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    border-left: 1px solid var(--border);
+    padding: 2rem 0;
+  }
+
+  .links.open {
+    right: 0;
+  }
+
+  .links a {
+    font-size: 1.1rem;
+  }
+}

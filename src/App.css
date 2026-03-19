@@ -1,0 +1,9 @@
+/* All styling is in index.css and CSS Modules per component */
+#root {
+  min-height: 100svh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}

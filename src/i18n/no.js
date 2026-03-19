@@ -1,0 +1,277 @@
+const no = {
+  nav: {
+    links: [
+      { label: 'Om meg',       href: '#om-meg' },
+      { label: 'Utdanning',    href: '#utdanning' },
+      { label: 'Erfaring',     href: '#erfaring' },
+      { label: 'Ferdigheter',  href: '#ferdigheter' },
+      { label: 'Prosjekter',   href: '#prosjekter' },
+      { label: 'Kontakt',      href: '#kontakt' },
+    ],
+    darkMode:        'Mørk modus',
+    lightMode:       'Lys modus',
+    ariaToggleTheme: 'Bytt tema',
+    ariaMenu:        'Meny',
+    cvAriaLabel:     'Last ned CV',
+    switchLang:      'EN',
+    ariaLang:        'Switch to English',
+  },
+
+  hero: {
+    greeting:    'Hei, jeg er',
+    tagline:     'Student & utvikler — nysgjerrig, ambisiøs og alltid i gang med noe nytt',
+    btnAbout:    'Om meg',
+    btnProjects: 'Se prosjekter',
+    btnCV:       'Last ned CV',
+    ariaCV:      'Last ned CV',
+    ariaGitHub:  'GitHub',
+    ariaLinkedIn:'LinkedIn',
+  },
+
+  about: {
+    label: 'Om meg',
+    title: 'Hvem er jeg?',
+    p1:    'Hei! Jeg er <b>Markus</b>, en nysgjerrig masterstudent med stor interesse for teknologi, programmering og digitale løsninger som kan gjøre hverdagen lettere.',
+    p2:    'Jeg liker å jobbe med prosjekter som utfordrer meg og lar meg lære nye ferdigheter. Denne nettsiden er et eksempel på det — laget for å vise hvem jeg er og hva jeg brenner for.',
+    p3:    'På fritiden er jeg opptatt av golf, gaming, trening og å være med kompiser. Ikke nøl med å ta kontakt hvis du vil slå av en prat eller samarbeide på noe spennende!',
+    facts: [
+      { emoji: '📍', label: 'Lokasjon',    value: 'Bergen, Norge' },
+      { emoji: '🎓', label: 'Status',      value: 'Student ved UiB' },
+      { emoji: '💻', label: 'Interesser',  value: 'Teknologi & utvikling' },
+      { emoji: '🌱', label: 'Lærer nå',    value: 'React, Node.js' },
+    ],
+  },
+
+  education: {
+    label:         'Utdanning',
+    title:         'Akademisk bakgrunn',
+    statusActive:  'Pågående',
+    statusDone:    'Fullført',
+    subjectsLabel: 'Fagområder',
+    schools: [
+      {
+        school:      'Universitetet i Bergen',
+        short:       'UiB',
+        degree:      'Master i Informasjonsvitenskap',
+        period:      '2024 – nåværende',
+        status:      'active',
+        location:    'Bergen',
+        icon:        '🎓',
+        color:       'var(--accent)',
+        description: 'Masterprogrammet kombinerer teknologi, kognitiv vitenskap og design for å forstå hvordan mennesker samhandler med digitale systemer.',
+        subjects: [
+          { name: 'Kunstig intelligens',        icon: '🤖' },
+          { name: 'Recommender Systems',         icon: '🔍' },
+          { name: 'Human-Computer Interaction',  icon: '🖱️' },
+          { name: 'Maskinlæring & Algoritmer',   icon: '📈' },
+        ],
+        highlight: null,
+      },
+      {
+        school:      'Høgskulen på Vestlandet',
+        short:       'HVL',
+        degree:      'Bachelor i Dataingeniør',
+        period:      '2021 – 2024',
+        status:      'done',
+        location:    'Bergen',
+        icon:        '🏫',
+        color:       'var(--accent-secondary)',
+        description: 'Bred ingeniørutdanning med fokus på programvareutvikling, systemarkitektur og moderne utviklingsmetoder.',
+        subjects: [
+          { name: 'Videregående webapplikasjoner', icon: '🌐' },
+          { name: '3D datagrafikk',                icon: '🎮' },
+          { name: 'Programvareutvikling',          icon: '⚙️' },
+          { name: 'Utviklingsmetoder',             icon: '🔄' },
+        ],
+        highlight: {
+          label: 'Bacheloroppgave',
+          text:  'Utviklet en mobilapplikasjon i samarbeid med Link Utvikling, bygget med Flutter og Firebase.',
+          tags:  ['Flutter', 'Firebase', 'Dart'],
+        },
+      },
+    ],
+  },
+
+  experience: {
+    label: 'Erfaring',
+    title: 'Hvor har jeg jobbet?',
+    jobs: [
+      {
+        company: 'Elkjøp Straume',
+        role:    'Selger & Vara verneombud',
+        period:  '2021 – nåværende',
+        icon:    '🛒',
+        tags:    ['Salg', 'Kundeservice', 'HMS'],
+        points:  [
+          'Kundeveiledning, mersalg og teknisk support.',
+          'Stemt frem som vara verneombud i 2022, med fokus på HMS og arbeidsmiljø.',
+        ],
+      },
+      {
+        company: 'Forsvaret',
+        role:    'Vaktsoldat & Lagfører',
+        period:  '2020 – nåværende',
+        icon:    '🪖',
+        tags:    ['Ledelse', 'Heimevernet'],
+        points:  [
+          'Ledet vaktlag under hærens våpenskole Rena (førstegangstjeneste 2020–2021).',
+          'Lagfører i Heimevernet fra 2024.',
+        ],
+      },
+      {
+        company: 'Masterutvalget InfoMedia',
+        role:    'Økonomiansvarlig',
+        period:  '2025 – 2026',
+        icon:    '📊',
+        tags:    ['Økonomi', 'Organisasjon'],
+        points:  [
+          'Ansvarlig for økonomiforvaltning i masterutvalget ved InfoMedia, UiB.',
+        ],
+      },
+      {
+        company: 'Root Linjeforening',
+        role:    'IT-ansvarlig & Styremedlem',
+        period:  '2023 – 2024',
+        icon:    '💻',
+        tags:    ['IT-drift', 'Webutvikling'],
+        points:  [
+          'Drift og utvikling av foreningens IT-systemer og nettside.',
+          'Medansvarlig for utvikling av ny nettside i samarbeid med PIN-kodegruppen.',
+        ],
+      },
+      {
+        company: 'Sotra Taekwondo Klubb',
+        role:    'Instruktør & Varastyremedlem',
+        period:  '2018 – 2020',
+        icon:    '🥋',
+        tags:    ['Instruksjon', 'Ledelse'],
+        points:  [
+          'Planla og gjennomførte trening for barn i NTN Taekwondo.',
+          'Veiledet hjelpeinstruktører for å sikre kvalitet i treningsopplegget.',
+          'Varastyremedlem 2023–2025.',
+        ],
+      },
+    ],
+  },
+
+  skills: {
+    label: 'Ferdigheter',
+    title: 'Hva kan jeg?',
+    levels: {
+      erfaren:   'Erfaren',
+      kjent:     'Kjent med',
+      utforsker: 'Utforsker',
+    },
+    categories: [
+      {
+        title: 'Programmeringsspråk',
+        icon:  '{ }',
+        skills: [
+          { name: 'JavaScript', level: 'erfaren' },
+          { name: 'Python',     level: 'erfaren' },
+          { name: 'Dart',       level: 'erfaren' },
+          { name: 'Java',       level: 'kjent' },
+          { name: 'SQL',        level: 'kjent' },
+          { name: 'MATLAB',     level: 'utforsker' },
+        ],
+      },
+      {
+        title: 'Frontend & Mobil',
+        icon:  '⬡',
+        skills: [
+          { name: 'React',     level: 'erfaren' },
+          { name: 'Flutter',   level: 'erfaren' },
+          { name: 'HTML & CSS',level: 'erfaren' },
+          { name: 'OpenGL',    level: 'utforsker' },
+        ],
+      },
+      {
+        title: 'Backend & Sky',
+        icon:  '☁',
+        skills: [
+          { name: 'Firebase',          level: 'erfaren' },
+          { name: 'Node.js',           level: 'kjent' },
+          { name: 'Azure',             level: 'kjent' },
+          { name: 'Nettverk (TCP/IP)', level: 'kjent' },
+        ],
+      },
+      {
+        title: 'Verktøy & Biblioteker',
+        icon:  '⚙',
+        skills: [
+          { name: 'Git & GitHub', level: 'erfaren' },
+          { name: 'SciKit-learn', level: 'kjent' },
+          { name: 'VS Code',      level: 'erfaren' },
+        ],
+      },
+    ],
+  },
+
+  projects: {
+    label: 'Prosjekter',
+    title: 'Hva har jeg bygget?',
+    statusLabels: {
+      live:       '🟢 Live',
+      restricted: '🔒 Begrenset tilgang',
+      wip:        '🚧 Under arbeid',
+    },
+    items: [
+      {
+        title:     'Personlig nettside',
+        status:    'live',
+        desc:      'Du ser den nå! En fullstack portefølje bygget fra bunnen med React og Vite. Fokus på rent design, animasjoner og god brukeropplevelse.',
+        tags:      ['React', 'Vite', 'CSS Modules', 'Formspree'],
+        link:      'https://github.com/markusnlarsen',
+        linkLabel: 'Se kode',
+      },
+      {
+        title:     'Bacheloroppgave — Mobilapplikasjon',
+        status:    'restricted',
+        desc:      'Utviklet en mobilapplikasjon i samarbeid med Link Utvikling som del av bachelorgraden ved HVL. Prosjektet dekket hele utviklingsløpet fra kravspesifikasjon til ferdig produkt.',
+        tags:      ['Flutter', 'Firebase', 'Dart', 'Link Utvikling'],
+        link:      null,
+        linkLabel: null,
+      },
+      {
+        title:     'Masteroppgave — Informasjonsvitenskap',
+        status:    'wip',
+        desc:      'Pågående masteroppgave ved UiB med fordypning i Human-Computer Interaction og kunstig intelligens. Detaljer publiseres når oppgaven er ferdigstilt.',
+        tags:      ['HCI', 'KI', 'Maskinlæring', 'UiB'],
+        link:      null,
+        linkLabel: null,
+        eta:       'Forventet ferdig: Mai 2026',
+      },
+    ],
+  },
+
+  contact: {
+    label:            'Kontakt',
+    title:            'Ta kontakt',
+    subtitle:         'Har du et spørsmål, en idé eller bare vil si hei? Send meg en melding!',
+    nameLabel:        'Navn',
+    emailLabel:       'E-post',
+    messageLabel:     'Melding',
+    namePlaceholder:  'Ditt navn',
+    emailPlaceholder: 'din@epost.no',
+    msgPlaceholder:   'Skriv din melding her...',
+    submitBtn:        'Send melding',
+    sendingBtn:       'Sender...',
+    waitBtn:          s => `Vent ${s}s`,
+    successMsg:       'Takk for meldingen! Jeg svarer så fort jeg kan.',
+    errorMsg:         'Noe gikk galt. Prøv igjen eller send e-post direkte.',
+    rateLimitMsg:     s => `Vent ${s} sekund${s !== 1 ? 'er' : ''} før du sender igjen.`,
+    footer:           y => `© ${y} Markus Nipen Larsen — Laget med ❤️ og litt hjelp fra Claude`,
+    validation: {
+      nameRequired:    'Navn er påkrevd.',
+      nameTooLong:     'Navn kan ikke være lengre enn 100 tegn.',
+      emailRequired:   'E-post er påkrevd.',
+      emailInvalid:    'Ugyldig e-postadresse.',
+      emailTooLong:    'E-postadressen er for lang.',
+      msgRequired:     'Melding er påkrevd.',
+      msgTooShort:     'Meldingen er for kort.',
+      msgTooLong:      n => `Meldingen er for lang (${n}/2000 tegn).`,
+    },
+  },
+}
+
+export default no
