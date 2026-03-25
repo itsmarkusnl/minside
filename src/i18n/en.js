@@ -19,7 +19,7 @@ const en = {
 
   hero: {
     greeting:    "Hi, I'm",
-    tagline:     'Student & developer — curious, ambitious and always working on something new',
+    tagline:     'Student & developer: curious, ambitious and always ready for something new',
     btnAbout:    'About me',
     btnProjects: 'See projects',
     btnCV:       'Download CV',
@@ -32,12 +32,12 @@ const en = {
     label: 'About me',
     title: 'Who am I?',
     p1:    "Hi! I'm <b>Markus</b>, a curious master's student with a strong interest in technology, programming and digital solutions that make everyday life easier.",
-    p2:    "I enjoy working on projects that challenge me and allow me to learn new skills. This website is one example — built to show who I am and what I'm passionate about.",
+    p2:    "I enjoy working on projects that challenge me and allow me to learn new skills. This website is one example; built to show who I am, what I know and what I'm passionate about.",
     p3:    "In my free time I enjoy golf, gaming, working out and spending time with friends. Don't hesitate to reach out if you'd like to chat or collaborate on something exciting!",
     facts: [
       { emoji: '📍', label: 'Location',          value: 'Bergen, Norway' },
       { emoji: '🎓', label: 'Status',             value: "Master's student at UiB" },
-      { emoji: '💻', label: 'Interests',          value: 'Technology & development' },
+      { emoji: '💻', label: 'Interests',          value: 'Technology & Sports' },
       { emoji: '🌱', label: 'Currently learning', value: 'React, Node.js' },
     ],
   },

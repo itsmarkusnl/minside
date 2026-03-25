@@ -19,7 +19,7 @@ const no = {
 
   hero: {
     greeting:    'Hei, jeg er',
-    tagline:     'Student & utvikler — nysgjerrig, ambisiøs og alltid i gang med noe nytt',
+    tagline:     'Student & utvikler: nysgjerrig, ambisiøs og alltid klar for noe nytt',
     btnAbout:    'Om meg',
     btnProjects: 'Se prosjekter',
     btnCV:       'Last ned CV',
@@ -32,12 +32,12 @@ const no = {
     label: 'Om meg',
     title: 'Hvem er jeg?',
     p1:    'Hei! Jeg er <b>Markus</b>, en nysgjerrig masterstudent med stor interesse for teknologi, programmering og digitale løsninger som kan gjøre hverdagen lettere.',
-    p2:    'Jeg liker å jobbe med prosjekter som utfordrer meg og lar meg lære nye ferdigheter. Denne nettsiden er et eksempel på det — laget for å vise hvem jeg er og hva jeg brenner for.',
+    p2:    'Jeg liker å jobbe med prosjekter som utfordrer meg og lar meg lære nye ferdigheter. Denne nettsiden er et eksempel på det; laget for å vise hvem jeg er, hva jeg kan og hva jeg brenner for.',
     p3:    'På fritiden er jeg opptatt av golf, gaming, trening og å være med kompiser. Ikke nøl med å ta kontakt hvis du vil slå av en prat eller samarbeide på noe spennende!',
     facts: [
       { emoji: '📍', label: 'Lokasjon',    value: 'Bergen, Norge' },
-      { emoji: '🎓', label: 'Status',      value: 'Student ved UiB' },
-      { emoji: '💻', label: 'Interesser',  value: 'Teknologi & utvikling' },
+      { emoji: '🎓', label: 'Status',      value: 'Masterstudent ved UiB' },
+      { emoji: '💻', label: 'Interesser',  value: 'Teknologi & Sport' },
       { emoji: '🌱', label: 'Lærer nå',    value: 'React, Node.js' },
     ],
   },
