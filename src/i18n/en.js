@@ -221,7 +221,7 @@ const en = {
         status:    'live',
         desc:      "You're looking at it! A portfolio built from scratch with React and Vite, focusing on clean design, animations and great user experience.",
         tags:      ['React', 'Vite', 'CSS Modules', 'Formspree'],
-        link:      'https://github.com/markusnlarsen',
+        link:      'https://github.com/itsmarkusnl/minside/tree/main',
         linkLabel: 'View code',
       },
       {

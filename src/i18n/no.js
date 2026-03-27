@@ -221,7 +221,7 @@ const no = {
         status:    'live',
         desc:      'Du ser den nå! En fullstack portefølje bygget fra bunnen med React og Vite. Fokus på rent design, animasjoner og god brukeropplevelse.',
         tags:      ['React', 'Vite', 'CSS Modules', 'Formspree'],
-        link:      'https://github.com/markusnlarsen',
+        link:      'https://github.com/itsmarkusnl/minside/tree/main',
         linkLabel: 'Se kode',
       },
       {
