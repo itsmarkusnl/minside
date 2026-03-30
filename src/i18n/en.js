@@ -260,7 +260,7 @@ const en = {
     successMsg:       "Thanks for your message! I'll get back to you as soon as I can.",
     errorMsg:         'Something went wrong. Please try again or send an email directly.',
     rateLimitMsg:     s => `Wait ${s} second${s !== 1 ? 's' : ''} before sending again.`,
-    footer:           y => `© ${y} Markus Nipen Larsen — Built with ❤️ and a little help from Claude`,
+    footer:           y => `© ${y} created and owned by Markus Nipen Larsen | Built with React & Vite`,
     validation: {
       nameRequired:  'Name is required.',
       nameTooLong:   'Name cannot exceed 100 characters.',
