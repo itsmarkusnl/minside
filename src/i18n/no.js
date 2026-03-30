@@ -260,7 +260,7 @@ const no = {
     successMsg:       'Takk for meldingen! Jeg svarer så fort jeg kan.',
     errorMsg:         'Noe gikk galt. Prøv igjen eller send e-post direkte.',
     rateLimitMsg:     s => `Vent ${s} sekund${s !== 1 ? 'er' : ''} før du sender igjen.`,
-    footer:           y => `© ${y} Markus Nipen Larsen — Laget med ❤️ og litt hjelp fra Claude`,
+    footer:           y => `© ${y} Laget og eied av Markus Nipen Larsen | Bygget med React & Vite`,
     validation: {
       nameRequired:    'Navn er påkrevd.',
       nameTooLong:     'Navn kan ikke være lengre enn 100 tegn.',
