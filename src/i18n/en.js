@@ -35,10 +35,10 @@ const en = {
     p2:    "I enjoy working on projects that challenge me and allow me to learn new skills. This website is one example; built to show who I am, what I know and what I'm passionate about.",
     p3:    "In my free time I enjoy golf, gaming, working out and spending time with friends. Don't hesitate to reach out if you'd like to chat or collaborate on something exciting!",
     facts: [
-      { emoji: '📍', label: 'Location',          value: 'Bergen, Norway' },
-      { emoji: '🎓', label: 'Status',             value: "Master's student at UiB" },
-      { emoji: '💻', label: 'Interests',          value: 'Technology & Sports' },
-      { emoji: '🌱', label: 'Currently learning', value: 'React, Node.js' },
+      { icon: 'pin',        label: 'Location',           value: 'Bergen, Norway' },
+      { icon: 'graduation', label: 'Status',             value: "Master's student at UiB" },
+      { icon: 'laptop',     label: 'Interests',          value: 'Technology & Sports' },
+      { icon: 'sprout',     label: 'Currently learning', value: 'React, Node.js' },
     ],
   },
 
@@ -56,14 +56,14 @@ const en = {
         period:      '2024 – present',
         status:      'active',
         location:    'Bergen',
-        icon:        '🎓',
+        icon:        'graduation',
         color:       'var(--accent)',
         description: "The master's programme combines technology, cognitive science and design to understand how people interact with digital systems.",
         subjects: [
-          { name: 'Artificial Intelligence',      icon: '🤖' },
-          { name: 'Recommender Systems',           icon: '🔍' },
-          { name: 'Human-Computer Interaction',    icon: '🖱️' },
-          { name: 'Machine Learning & Algorithms', icon: '📈' },
+          { name: 'Artificial Intelligence',      icon: 'bot' },
+          { name: 'Recommender Systems',           icon: 'search' },
+          { name: 'Human-Computer Interaction',    icon: 'cursor' },
+          { name: 'Machine Learning & Algorithms', icon: 'chart-up' },
         ],
         highlight: null,
       },
@@ -74,14 +74,14 @@ const en = {
         period:      '2021 – 2024',
         status:      'done',
         location:    'Bergen',
-        icon:        '🏫',
+        icon:        'school',
         color:       'var(--accent-secondary)',
         description: 'A broad engineering degree focused on software development, system architecture and modern development methodologies.',
         subjects: [
-          { name: 'Advanced Web Applications',  icon: '🌐' },
-          { name: '3D Computer Graphics',       icon: '🎮' },
-          { name: 'Software Development',       icon: '⚙️' },
-          { name: 'Development Methodologies',  icon: '🔄' },
+          { name: 'Advanced Web Applications',  icon: 'globe' },
+          { name: '3D Computer Graphics',       icon: 'gamepad' },
+          { name: 'Software Development',       icon: 'gear' },
+          { name: 'Development Methodologies',  icon: 'refresh' },
         ],
         highlight: {
           label: 'Bachelor thesis',
@@ -100,7 +100,7 @@ const en = {
         company: 'Elkjøp Straume',
         role:    'Sales Associate & Deputy Safety Representative',
         period:  '2021 – present',
-        icon:    '🛒',
+        icon:    'cart',
         tags:    ['Sales', 'Customer service', 'HSE'],
         points:  [
           'Customer advising, upselling and technical support.',
@@ -111,7 +111,7 @@ const en = {
         company: 'Norwegian Armed Forces',
         role:    'Guard Soldier & Squad Leader',
         period:  '2020 – present',
-        icon:    '🪖',
+        icon:    'shield',
         tags:    ['Leadership', 'Home Guard'],
         points:  [
           'Led guard teams at the Army Combat School, Rena (conscript service 2020–2021).',
@@ -122,7 +122,7 @@ const en = {
         company: 'Masterutvalget InfoMedia',
         role:    'Finance Manager',
         period:  '2025 – 2026',
-        icon:    '📊',
+        icon:    'chart-bar',
         tags:    ['Finance', 'Organisation'],
         points:  [
           'Responsible for financial management within the master student council at InfoMedia, UiB.',
@@ -132,7 +132,7 @@ const en = {
         company: 'Root Linjeforening',
         role:    'IT Manager & Board Member',
         period:  '2023 – 2024',
-        icon:    '💻',
+        icon:    'laptop',
         tags:    ['IT operations', 'Web development'],
         points:  [
           "Management and development of the association's IT systems and website.",
@@ -143,7 +143,7 @@ const en = {
         company: 'Sotra Taekwondo Club',
         role:    'Instructor & Deputy Board Member',
         period:  '2018 – 2020',
-        icon:    '🥋',
+        icon:    'award',
         tags:    ['Instruction', 'Leadership'],
         points:  [
           'Planned and conducted training sessions for children in NTN Taekwondo.',
@@ -165,7 +165,7 @@ const en = {
     categories: [
       {
         title: 'Programming Languages',
-        icon:  '{ }',
+        icon:  'code',
         skills: [
           { name: 'JavaScript', level: 'erfaren' },
           { name: 'Python',     level: 'erfaren' },
@@ -177,7 +177,7 @@ const en = {
       },
       {
         title: 'Frontend & Mobile',
-        icon:  '⬡',
+        icon:  'hexagon',
         skills: [
           { name: 'React',      level: 'erfaren' },
           { name: 'Flutter',    level: 'erfaren' },
@@ -187,7 +187,7 @@ const en = {
       },
       {
         title: 'Backend & Cloud',
-        icon:  '☁',
+        icon:  'cloud',
         skills: [
           { name: 'Firebase',           level: 'erfaren' },
           { name: 'Node.js',            level: 'kjent' },
@@ -197,7 +197,7 @@ const en = {
       },
       {
         title: 'Tools & Libraries',
-        icon:  '⚙',
+        icon:  'gear',
         skills: [
           { name: 'Git & GitHub', level: 'erfaren' },
           { name: 'SciKit-learn', level: 'kjent' },
@@ -211,9 +211,10 @@ const en = {
     label: 'Projects',
     title: 'What have I built?',
     statusLabels: {
-      live:       '🟢 Live',
-      restricted: '🔒 Restricted access',
-      wip:        '🚧 In progress',
+      live:       'Live',
+      restricted: 'Restricted access',
+      wip:        'In progress',
+      done:       'Completed',
     },
     items: [
       {
@@ -234,12 +235,11 @@ const en = {
       },
       {
         title:     "Master's Thesis — Information Science",
-        status:    'wip',
-        desc:      "Ongoing master's thesis at UiB with a focus on Human-Computer Interaction and artificial intelligence. Details will be published once the thesis is complete.",
+        status:    'done',
+        desc:      "Completed master's thesis at UiB with a focus on Human-Computer Interaction and artificial intelligence.",
         tags:      ['HCI', 'AI', 'Machine Learning', 'UiB'],
-        link:      null,
-        linkLabel: null,
-        eta:       'Expected completion: May 2026',
+        link:      'https://github.com/itsmarkusnl/masteroppgave-nyheter-obx',
+        linkLabel: 'View code',
       },
     ],
   },

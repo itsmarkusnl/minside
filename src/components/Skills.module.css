@@ -93,10 +93,8 @@
 }
 
 .catIcon {
-  font-size: 1rem;
+  display: flex;
   color: var(--accent-secondary);
-  font-style: normal;
-  font-family: 'JetBrains Mono', monospace;
 }
 
 /* Chip-samling */

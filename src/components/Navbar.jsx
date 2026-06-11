@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './Navbar.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
 
 function useTheme() {
   const [dark, setDark] = useState(() => {
@@ -49,7 +50,8 @@ export default function Navbar() {
         {/* Tema + språk rad øverst i mobilmeny */}
         <li className={styles.themeRow}>
           <span className={styles.themeLabel}>
-            {dark ? `🌙 ${nav.darkMode}` : `☀️ ${nav.lightMode}`}
+            <Icon name={dark ? 'moon' : 'sun'} size={15} />
+            {dark ? nav.darkMode : nav.lightMode}
           </span>
           <div className={styles.themeRowControls}>
             <button

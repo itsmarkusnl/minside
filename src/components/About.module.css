@@ -70,9 +70,10 @@
   background: var(--bg-card-hover);
 }
 
-.factEmoji {
-  font-size: 1.4rem;
+.factIcon {
+  display: flex;
   flex-shrink: 0;
+  color: var(--accent);
 }
 
 .factLabel {

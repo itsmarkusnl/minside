@@ -1,5 +1,6 @@
 import styles from './About.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
 
 export default function About() {
   const { t } = useLanguage()
@@ -21,7 +22,7 @@ export default function About() {
           <div className={styles.facts}>
             {a.facts.map(f => (
               <div key={f.label} className={styles.factCard}>
-                <span className={styles.factEmoji}>{f.emoji}</span>
+                <span className={styles.factIcon}><Icon name={f.icon} size={22} /></span>
                 <div>
                   <div className={styles.factLabel}>{f.label}</div>
                   <div className={styles.factValue}>{f.value}</div>

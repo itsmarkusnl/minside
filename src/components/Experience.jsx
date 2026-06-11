@@ -1,5 +1,6 @@
 import styles from './Experience.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
 
 export default function Experience() {
   const { t } = useLanguage()
@@ -15,7 +16,7 @@ export default function Experience() {
           {e.jobs.map((exp, i) => (
             <div key={i} className={styles.item}>
               <div className={styles.iconCol}>
-                <div className={styles.iconBox}>{exp.icon}</div>
+                <div className={styles.iconBox}><Icon name={exp.icon} size={20} /></div>
                 {i < e.jobs.length - 1 && <div className={styles.line} />}
               </div>
 

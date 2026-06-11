@@ -1,5 +1,6 @@
 import styles from './Education.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
 
 export default function Education() {
   const { t } = useLanguage()
@@ -18,14 +19,15 @@ export default function Education() {
               {/* Toppbanner */}
               <div className={styles.banner}>
                 <div className={styles.bannerLeft}>
-                  <span className={styles.schoolIcon}>{edu.icon}</span>
+                  <span className={styles.schoolIcon}><Icon name={edu.icon} size={26} /></span>
                   <div>
                     <p className={styles.schoolShort}>{edu.short}</p>
                     <p className={styles.schoolFull}>{edu.school}</p>
                   </div>
                 </div>
                 <span className={`${styles.badge} ${edu.status === 'active' ? styles.badgeActive : styles.badgeDone}`}>
-                  {edu.status === 'active' ? `🟢 ${e.statusActive}` : `✅ ${e.statusDone}`}
+                  <Icon name={edu.status === 'active' ? 'dot' : 'check'} size={edu.status === 'active' ? 8 : 11} />
+                  {edu.status === 'active' ? e.statusActive : e.statusDone}
                 </span>
               </div>
 
@@ -33,8 +35,8 @@ export default function Education() {
               <div className={styles.body}>
                 <h3 className={styles.degree}>{edu.degree}</h3>
                 <div className={styles.meta}>
-                  <span>📅 {edu.period}</span>
-                  <span>📍 {edu.location}</span>
+                  <span><Icon name="calendar" size={13} />{edu.period}</span>
+                  <span><Icon name="pin" size={13} />{edu.location}</span>
                 </div>
                 <p className={styles.description}>{edu.description}</p>
 
@@ -44,7 +46,7 @@ export default function Education() {
                   <div className={styles.subjectGrid}>
                     {edu.subjects.map(s => (
                       <div key={s.name} className={styles.subject}>
-                        <span>{s.icon}</span>
+                        <span className={styles.subjectIcon}><Icon name={s.icon} size={15} /></span>
                         <span>{s.name}</span>
                       </div>
                     ))}
@@ -54,7 +56,7 @@ export default function Education() {
                 {/* Highlight-boks */}
                 {edu.highlight && (
                   <div className={styles.highlight}>
-                    <p className={styles.highlightLabel}>🏆 {edu.highlight.label}</p>
+                    <p className={styles.highlightLabel}><Icon name="trophy" size={14} />{edu.highlight.label}</p>
                     <p className={styles.highlightText}>{edu.highlight.text}</p>
                     <div className={styles.highlightTags}>
                       {edu.highlight.tags.map(tag => (

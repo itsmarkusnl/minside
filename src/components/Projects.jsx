@@ -1,5 +1,13 @@
 import styles from './Projects.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
+
+const statusIcons = {
+  live:       'dot',
+  restricted: 'lock',
+  wip:        'wrench',
+  done:       'check',
+}
 
 function ProjectCard({ project, statusLabel }) {
   const Wrapper    = project.link ? 'a' : 'div'
@@ -19,6 +27,7 @@ function ProjectCard({ project, statusLabel }) {
             d="M3 7a2 2 0 0 1 2-2h3.586a1 1 0 0 1 .707.293L10.414 6.4A1 1 0 0 0 11.121 6.693H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/>
         </svg>
         <span className={`${styles.statusBadge} ${styles['status_' + project.status]}`}>
+          <Icon name={statusIcons[project.status]} size={project.status === 'live' ? 8 : 11} />
           {statusLabel}
         </span>
       </div>

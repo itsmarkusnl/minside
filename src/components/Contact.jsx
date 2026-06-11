@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import styles from './Contact.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
 
 const FORMSPREE_URL  = 'https://formspree.io/f/xdawyvez'
 const RATE_LIMIT_KEY = 'contact_last_sent'
@@ -117,13 +118,13 @@ export default function Contact() {
 
         {sent ? (
           <div className={styles.success}>
-            <span>✅</span>
+            <span><Icon name="check" size={24} /></span>
             <p>{c.successMsg}</p>
           </div>
         ) : (
           <form className={styles.form} onSubmit={handleSubmit} noValidate>
 
-            {/* 🍯 Honeypot */}
+            {/* Honeypot */}
             <input
               type="text"
               name="_gotcha"

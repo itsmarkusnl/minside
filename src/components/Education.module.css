@@ -64,8 +64,9 @@
 }
 
 .schoolIcon {
-  font-size: 1.8rem;
+  display: flex;
   line-height: 1;
+  color: var(--accent-color, var(--accent));
 }
 
 .schoolShort {
@@ -89,6 +90,9 @@
   padding: 4px 10px;
   white-space: nowrap;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .badgeActive {
@@ -129,6 +133,9 @@
   font-size: 0.8rem;
   color: var(--text-muted);
   font-family: 'JetBrains Mono', monospace;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .description {
@@ -156,6 +163,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem;
+}
+
+.subjectIcon {
+  display: flex;
+  flex-shrink: 0;
+  color: var(--accent-color, var(--accent));
 }
 
 .subject {
@@ -194,6 +207,9 @@
   color: var(--accent-secondary);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .highlightText {

@@ -35,10 +35,10 @@ const no = {
     p2:    'Jeg liker å jobbe med prosjekter som utfordrer meg og lar meg lære nye ferdigheter. Denne nettsiden er et eksempel på det; laget for å vise hvem jeg er, hva jeg kan og hva jeg brenner for.',
     p3:    'På fritiden er jeg opptatt av golf, gaming, trening og å være med kompiser. Ikke nøl med å ta kontakt hvis du vil slå av en prat eller samarbeide på noe spennende!',
     facts: [
-      { emoji: '📍', label: 'Lokasjon',    value: 'Bergen, Norge' },
-      { emoji: '🎓', label: 'Status',      value: 'Masterstudent ved UiB' },
-      { emoji: '💻', label: 'Interesser',  value: 'Teknologi & Sport' },
-      { emoji: '🌱', label: 'Lærer nå',    value: 'React, Node.js' },
+      { icon: 'pin',        label: 'Lokasjon',    value: 'Bergen, Norge' },
+      { icon: 'graduation', label: 'Status',      value: 'Masterstudent ved UiB' },
+      { icon: 'laptop',     label: 'Interesser',  value: 'Teknologi & Sport' },
+      { icon: 'sprout',     label: 'Lærer nå',    value: 'React, Node.js' },
     ],
   },
 
@@ -56,14 +56,14 @@ const no = {
         period:      '2024 – nåværende',
         status:      'active',
         location:    'Bergen',
-        icon:        '🎓',
+        icon:        'graduation',
         color:       'var(--accent)',
         description: 'Masterprogrammet kombinerer teknologi, kognitiv vitenskap og design for å forstå hvordan mennesker samhandler med digitale systemer.',
         subjects: [
-          { name: 'Kunstig intelligens',        icon: '🤖' },
-          { name: 'Recommender Systems',         icon: '🔍' },
-          { name: 'Human-Computer Interaction',  icon: '🖱️' },
-          { name: 'Maskinlæring & Algoritmer',   icon: '📈' },
+          { name: 'Kunstig intelligens',        icon: 'bot' },
+          { name: 'Recommender Systems',         icon: 'search' },
+          { name: 'Human-Computer Interaction',  icon: 'cursor' },
+          { name: 'Maskinlæring & Algoritmer',   icon: 'chart-up' },
         ],
         highlight: null,
       },
@@ -74,14 +74,14 @@ const no = {
         period:      '2021 – 2024',
         status:      'done',
         location:    'Bergen',
-        icon:        '🏫',
+        icon:        'school',
         color:       'var(--accent-secondary)',
         description: 'Bred ingeniørutdanning med fokus på programvareutvikling, systemarkitektur og moderne utviklingsmetoder.',
         subjects: [
-          { name: 'Videregående webapplikasjoner', icon: '🌐' },
-          { name: '3D datagrafikk',                icon: '🎮' },
-          { name: 'Programvareutvikling',          icon: '⚙️' },
-          { name: 'Utviklingsmetoder',             icon: '🔄' },
+          { name: 'Videregående webapplikasjoner', icon: 'globe' },
+          { name: '3D datagrafikk',                icon: 'gamepad' },
+          { name: 'Programvareutvikling',          icon: 'gear' },
+          { name: 'Utviklingsmetoder',             icon: 'refresh' },
         ],
         highlight: {
           label: 'Bacheloroppgave',
@@ -100,7 +100,7 @@ const no = {
         company: 'Elkjøp Straume',
         role:    'Selger & Vara verneombud',
         period:  '2021 – nåværende',
-        icon:    '🛒',
+        icon:    'cart',
         tags:    ['Salg', 'Kundeservice', 'HMS'],
         points:  [
           'Kundeveiledning, mersalg og teknisk support.',
@@ -111,7 +111,7 @@ const no = {
         company: 'Forsvaret',
         role:    'Vaktsoldat & Lagfører',
         period:  '2020 – nåværende',
-        icon:    '🪖',
+        icon:    'shield',
         tags:    ['Ledelse', 'Heimevernet'],
         points:  [
           'Ledet vaktlag under hærens våpenskole Rena (førstegangstjeneste 2020–2021).',
@@ -122,7 +122,7 @@ const no = {
         company: 'Masterutvalget InfoMedia',
         role:    'Økonomiansvarlig',
         period:  '2025 – 2026',
-        icon:    '📊',
+        icon:    'chart-bar',
         tags:    ['Økonomi', 'Organisasjon'],
         points:  [
           'Ansvarlig for økonomiforvaltning i masterutvalget ved InfoMedia, UiB.',
@@ -132,7 +132,7 @@ const no = {
         company: 'Root Linjeforening',
         role:    'IT-ansvarlig & Styremedlem',
         period:  '2023 – 2024',
-        icon:    '💻',
+        icon:    'laptop',
         tags:    ['IT-drift', 'Webutvikling'],
         points:  [
           'Drift og utvikling av foreningens IT-systemer og nettside.',
@@ -143,7 +143,7 @@ const no = {
         company: 'Sotra Taekwondo Klubb',
         role:    'Instruktør & Varastyremedlem',
         period:  '2018 – 2020',
-        icon:    '🥋',
+        icon:    'award',
         tags:    ['Instruksjon', 'Ledelse'],
         points:  [
           'Planla og gjennomførte trening for barn i NTN Taekwondo.',
@@ -165,7 +165,7 @@ const no = {
     categories: [
       {
         title: 'Programmeringsspråk',
-        icon:  '{ }',
+        icon:  'code',
         skills: [
           { name: 'JavaScript', level: 'erfaren' },
           { name: 'Python',     level: 'erfaren' },
@@ -177,7 +177,7 @@ const no = {
       },
       {
         title: 'Frontend & Mobil',
-        icon:  '⬡',
+        icon:  'hexagon',
         skills: [
           { name: 'React',     level: 'erfaren' },
           { name: 'Flutter',   level: 'erfaren' },
@@ -187,7 +187,7 @@ const no = {
       },
       {
         title: 'Backend & Sky',
-        icon:  '☁',
+        icon:  'cloud',
         skills: [
           { name: 'Firebase',          level: 'erfaren' },
           { name: 'Node.js',           level: 'kjent' },
@@ -197,7 +197,7 @@ const no = {
       },
       {
         title: 'Verktøy & Biblioteker',
-        icon:  '⚙',
+        icon:  'gear',
         skills: [
           { name: 'Git & GitHub', level: 'erfaren' },
           { name: 'SciKit-learn', level: 'kjent' },
@@ -211,9 +211,10 @@ const no = {
     label: 'Prosjekter',
     title: 'Hva har jeg bygget?',
     statusLabels: {
-      live:       '🟢 Live',
-      restricted: '🔒 Begrenset tilgang',
-      wip:        '🚧 Under arbeid',
+      live:       'Live',
+      restricted: 'Begrenset tilgang',
+      wip:        'Under arbeid',
+      done:       'Fullført',
     },
     items: [
       {
@@ -234,12 +235,11 @@ const no = {
       },
       {
         title:     'Masteroppgave — Informasjonsvitenskap',
-        status:    'wip',
-        desc:      'Pågående masteroppgave ved UiB med fordypning i Human-Computer Interaction og kunstig intelligens. Detaljer publiseres når oppgaven er ferdigstilt.',
+        status:    'done',
+        desc:      'Fullført masteroppgave ved UiB med fordypning i Human-Computer Interaction og kunstig intelligens.',
         tags:      ['HCI', 'KI', 'Maskinlæring', 'UiB'],
-        link:      null,
-        linkLabel: null,
-        eta:       'Forventet ferdig: Mai 2026',
+        link:      'https://github.com/itsmarkusnl/masteroppgave-nyheter-obx',
+        linkLabel: 'Se kode',
       },
     ],
   },

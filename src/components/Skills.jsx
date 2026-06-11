@@ -1,5 +1,6 @@
 import styles from './Skills.module.css'
 import { useLanguage } from '../contexts/LanguageContext'
+import Icon from './Icon'
 
 const levelClass = {
   erfaren:   'levelErfaren',
@@ -30,7 +31,7 @@ export default function Skills() {
           {s.categories.map((cat, catIdx) => (
             <div key={catIdx} className={styles.card}>
               <h3 className={styles.catTitle}>
-                <span className={styles.catIcon}>{cat.icon}</span>
+                <span className={styles.catIcon}><Icon name={cat.icon} size={16} /></span>
                 {cat.title}
               </h3>
               <div className={styles.chips}>
