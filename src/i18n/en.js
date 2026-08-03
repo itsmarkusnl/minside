@@ -65,7 +65,11 @@ const en = {
           { name: 'Human-Computer Interaction',    icon: 'cursor' },
           { name: 'Machine Learning & Algorithms', icon: 'chart-up' },
         ],
-        highlight: null,
+        highlight: {
+          label: "Master's Thesis",
+          text:  'Ablation study using daily-aggregated Norwegian news, structured market/news features, Ridge regression, text representations, and walk-forward validation.',
+          tags:  ['News API', 'Python', 'Machine Learning'],
+        },
       },
       {
         school:      'Western Norway University of Applied Sciences',
@@ -226,7 +230,7 @@ const en = {
         linkLabel: 'View code',
       },
       {
-        title:     'Bachelor Thesis — Mobile Application',
+        title:     'Bachelor Thesis - Mobile Application',
         status:    'restricted',
         desc:      'Developed a mobile application in collaboration with Link Utvikling as part of the bachelor degree at HVL. The project covered the full development lifecycle from requirements specification to final product.',
         tags:      ['Flutter', 'Firebase', 'Dart', 'Link Utvikling'],
@@ -234,10 +238,10 @@ const en = {
         linkLabel: null,
       },
       {
-        title:     "Master's Thesis — Information Science",
+        title:     "Master's Thesis - Information Science",
         status:    'done',
-        desc:      "Completed master's thesis at UiB with a focus on Human-Computer Interaction and artificial intelligence.",
-        tags:      ['HCI', 'AI', 'Machine Learning', 'UiB'],
+        desc:      "Completed master’s thesis at the University of Bergen. The thesis examined whether Norwegian financial news can improve next-day OBX direction prediction beyond structured market data and news metadata.",
+        tags:      ['Information Science', 'AI', 'Machine Learning', 'UiB'],
         link:      'https://github.com/itsmarkusnl/masteroppgave-nyheter-obx',
         linkLabel: 'View code',
       },

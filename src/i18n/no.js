@@ -65,7 +65,11 @@ const no = {
           { name: 'Human-Computer Interaction',  icon: 'cursor' },
           { name: 'Maskinlæring & Algoritmer',   icon: 'chart-up' },
         ],
-        highlight: null,
+        highlight: {
+          label: 'Masteroppgave',
+          text:  'Ablasjonsstudie med daglig aggregerte norske nyheter, strukturerte markeds- og nyhetsfeatures, Ridge-regresjon, tekstrepresentasjoner og walk-forward validering..',
+          tags:  ['Nyhets API', 'Python', 'Maskinlæring'],
+        },
       },
       {
         school:      'Høgskulen på Vestlandet',
@@ -226,7 +230,7 @@ const no = {
         linkLabel: 'Se kode',
       },
       {
-        title:     'Bacheloroppgave — Mobilapplikasjon',
+        title:     'Bacheloroppgave - Mobilapplikasjon',
         status:    'restricted',
         desc:      'Utviklet en mobilapplikasjon i samarbeid med Link Utvikling som del av bachelorgraden ved HVL. Prosjektet dekket hele utviklingsløpet fra kravspesifikasjon til ferdig produkt.',
         tags:      ['Flutter', 'Firebase', 'Dart', 'Link Utvikling'],
@@ -234,10 +238,10 @@ const no = {
         linkLabel: null,
       },
       {
-        title:     'Masteroppgave — Informasjonsvitenskap',
+        title:     'Masteroppgave - Informasjonsvitenskap',
         status:    'done',
-        desc:      'Fullført masteroppgave ved UiB med fordypning i Human-Computer Interaction og kunstig intelligens.',
-        tags:      ['HCI', 'KI', 'Maskinlæring', 'UiB'],
+        desc:      'Fullført masteroppgave ved UiB. Oppgaven undersøkte om norske finansnyheter kan forbedre prediksjon av neste dags OBX-retning utover strukturerte markedsdata og nyhetsmetadata.',
+        tags:      ['Informasjonsvitenskap', 'KI', 'Maskinlæring', 'UiB'],
         link:      'https://github.com/itsmarkusnl/masteroppgave-nyheter-obx',
         linkLabel: 'Se kode',
       },
@@ -260,7 +264,7 @@ const no = {
     successMsg:       'Takk for meldingen! Jeg svarer så fort jeg kan.',
     errorMsg:         'Noe gikk galt. Prøv igjen eller send e-post direkte.',
     rateLimitMsg:     s => `Vent ${s} sekund${s !== 1 ? 'er' : ''} før du sender igjen.`,
-    footer:           y => `© ${y} Laget og eied av Markus Nipen Larsen | Bygget med React & Vite`,
+    footer:           y => `© ${y} Laget og eid av Markus Nipen Larsen | Bygget med React & Vite`,
     validation: {
       nameRequired:    'Navn er påkrevd.',
       nameTooLong:     'Navn kan ikke være lengre enn 100 tegn.',
