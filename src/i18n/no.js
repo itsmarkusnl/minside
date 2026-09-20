@@ -53,8 +53,8 @@ const no = {
         school:      'Universitetet i Bergen',
         short:       'UiB',
         degree:      'Master i Informasjonsvitenskap',
-        period:      '2024 – nåværende',
-        status:      'active',
+        period:      '2024 – 2026',
+        status:      'done',
         location:    'Bergen',
         icon:        'graduation',
         color:       'var(--accent)',
@@ -67,7 +67,7 @@ const no = {
         ],
         highlight: {
           label: 'Masteroppgave',
-          text:  'Ablasjonsstudie med daglig aggregerte norske nyheter, strukturerte markeds- og nyhetsfeatures, Ridge-regresjon, tekstrepresentasjoner og walk-forward validering..',
+          text:  'Ablasjonsstudie med daglig aggregerte norske nyheter, strukturerte markeds- og nyhetsfeatures, Ridge-regresjon, tekstrepresentasjoner og walk-forward validering.',
           tags:  ['Nyhets API', 'Python', 'Maskinlæring'],
         },
       },
@@ -221,6 +221,14 @@ const no = {
       done:       'Fullført',
     },
     items: [
+      {
+        title:     'SilverOcean — AI-kuratert morgenbrief for shipping',
+        status:    'live',
+        desc:      'Daglig, personalisert markedsbrief for skipsmeglere, operatører og befraktere. En Python-agent henter maritime nyheter og prediksjonsmarkeder, skriver og faktasjekker briefen med Claude, og sender den ut på e-post hver morgen.',
+        tags:      ['Python', 'Claude API', 'Node.js', 'GitHub Actions'],
+        link:      'https://silverocean.no',
+        linkLabel: 'Besøk siden',
+      },
       {
         title:     'Personlig nettside',
         status:    'live',

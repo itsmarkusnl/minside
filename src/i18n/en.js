@@ -53,8 +53,8 @@ const en = {
         school:      'University of Bergen',
         short:       'UiB',
         degree:      "Master's in Information Science",
-        period:      '2024 – present',
-        status:      'active',
+        period:      '2024 – 2026',
+        status:      'done',
         location:    'Bergen',
         icon:        'graduation',
         color:       'var(--accent)',
@@ -221,6 +221,14 @@ const en = {
       done:       'Completed',
     },
     items: [
+      {
+        title:     'SilverOcean — AI-curated morning brief for shipping',
+        status:    'live',
+        desc:      'Daily, personalised market brief for shipbrokers, operators and charterers. A Python agent gathers maritime news and prediction-market data, writes and fact-checks the brief with Claude, and delivers it by email every morning.',
+        tags:      ['Python', 'Claude API', 'Node.js', 'GitHub Actions'],
+        link:      'https://silverocean.no',
+        linkLabel: 'Visit site',
+      },
       {
         title:     'Personal website',
         status:    'live',
